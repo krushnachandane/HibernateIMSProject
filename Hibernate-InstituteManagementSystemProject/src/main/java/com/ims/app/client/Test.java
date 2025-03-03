@@ -13,7 +13,7 @@ public class Test {
 		IMSserviceI i =  new IMSserviceImpl();
 		while(true)
 		{
-		System.out.println("____Choose One____\n"+"1.Add Details\n"+"2.Get My Course Details\n");
+		System.out.println("____Choose One____\n"+"1.Add Your Details\n"+"2.Show Details\n"+"3.Update Details\n"+"0.Exit\n");
 		int ch=sc.nextInt();
 		
 		switch(ch)
@@ -26,6 +26,9 @@ public class Test {
 		
 		case 3: i.updateData();
 				break;
+		case 0:System.exit(ch);
+		
+		default:System.out.println("Invalid Input");
 		
 		}
 		}
